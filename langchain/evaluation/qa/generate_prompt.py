@@ -2,17 +2,17 @@
 from langchain.output_parsers.regex import RegexParser
 from langchain.prompts import PromptTemplate
 
-template = """You are a teacher coming up with questions to ask on a quiz. 
-Given the following document, please generate a question and answer based on that document.
+template = """あなたはクイズで出題する問題を考える教師です。
+以下の文書が与えられた場合、その文書に基づいた質問と回答を生成してください。
 
-Example Format:
+例のフォーマット：
 <Begin Document>
 ...
 <End Document>
-QUESTION: question here
-ANSWER: answer here
+QUESTION: 質問
+ANSWER: 回答
 
-These questions should be detailed and be based explicitly on information in the document. Begin!
+これらの質問は詳細であり、明示的に文書の情報に基づいている必要があります。始めましょう！
 
 <Begin Document>
 {doc}
