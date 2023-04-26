@@ -18,6 +18,7 @@ When coming up with this question/answer pair, you must respond in the following
 ```
 
 Everything between the ``` must be valid json.
+Answer in Japanese.
 """
 templ2 = """Please come up with a question/answer pair, in the specified JSON format, for the following text:
 ----------------
